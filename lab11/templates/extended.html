@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+ {{ super() }}
+{% endblock %}
+{% block body %}
+{%for message in get_flashed_messages()%}
+<p>{{message}}</p>
+{% endfor %}
+<form method="POST">
+ {{ form.name.label }} {{ form.name() }}
+ {{ form.submit() }}
+ {{name}}
+</form>
+{% endblock %}

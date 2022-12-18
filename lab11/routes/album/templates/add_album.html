@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}main{% endblock %}
+{% block head %}
+<script type="module" src="{{url_for('main.static',filename='script/sendAsync.js')}}" defer></script>
+<script type="module" src="{{url_for('main.static',filename='script/album_async.js')}}" defer></script>
+ {{ super() }}
+{% endblock %}
+{% block body %}
+
+
+<div class="add-album">
+<form method="post" enctype="multipart/form-data" id="album">
+ <h2>Add album</h2>
+ <span class="message"></span>
+ <label for="name">Album name:</label>
+ <input type="text" name="name" id="name">
+ <label for="desc">Description:</label>
+ <textarea name="desc" id="desc"></textarea>
+ <label for="pict">Album Photo:</label>
+ <input type="file" name="pict" id="pict">
+ <input type="submit" id="add_al">
+</form>
+
+<form  method="post" enctype="multipart/form-data" id="song">
+ <h2>Maybe you want add a song?</h2>
+ <span class="message"></span>
+ <label for="song_name">Song name:</label>
+ <input type="text" name="song_name" id="song_name">
+ <label for="link">Link to song(optionally):</label>
+ <input type="text" name="link" id="link">
+ <label for="audio">Audio(optionally):</label>
+ <input type="file" name="audio" id="audio">
+ <input type="submit" value="submit">
+</form>
+ </div>
+{% endblock %}

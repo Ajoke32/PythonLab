@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "John",
+      "surname": "Resfot",
+      "birthday": "2003-09-15"
+    },
+    {
+      "name": "Philip",
+      "surname": "Lam",
+      "birthday": "2001-13-05"
+    },
+    {
+      "name": "Jane",
+      "surname": "Pickford",
+      "birthday": "2004-11-10"
+    }
+  ]
+}

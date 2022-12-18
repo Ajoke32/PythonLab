@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}main{% endblock %}
+{% block head %}
+ {{ super() }}
+{% endblock %}
+{% block body %}
+<div class="wrapper">
+{% for i in al_list %}
+  <div>
+   <span class="edited">Edited: {{i.editor_name}}, {{i.edit_data.strftime("%m/%d/%Y")}}</span>
+  <img src="{{url_for('main.static',filename='img/'+i.img)}}" alt="imga">
+   <span>{{i.albumname}}</span>
+  <div class="buttons">
+      {% if session['is_log']==1 %}
+        <a href="album/{{i.id}}">Edit</a>
+      {% else %}
+        <a href="album/{{i.id}}">More</a>
+      {% endif %}
+  </div>
+ </div>
+ {% endfor %}
+
+</div>
+{% endblock %}

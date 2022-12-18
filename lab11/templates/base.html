@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    {% block head %}
+    <title>{% block title %}{% endblock %} - My Application</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='header.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='form.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+    {% endblock %}
+</head>
+<header>
+    <div>
+        <a href="/">Hollywood undead</a>
+    </div>
+    <div>
+        <a href="/">Main</a>
+        <a href="/about_prg">About project</a>
+        <a href="/about_group">Group History</a>
+    </div>
+    <div class="autho">
+        <button id="save">Save chages</button>
+        {% if not session['is_log'] %}
+        <a href="/user/login">Login</a>
+        <a href="/user/register">Register</a>
+        {% else %}
+        <span>Welcome, {{session['user']}}</span>
+        <a href="/album/add">Add new album</a>
+        <a href="/user/logout">Logout</a>
+        {% endif %}
+    </div>
+</header>
+<div id="messages">
+
+</div>
+<body>
+{% block body %}
+{% endblock %}
+</body>
+</html>

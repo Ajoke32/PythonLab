@@ -1,0 +1,3 @@
+kmr count:2
+KMR 2 av_t(20.16)<KMR 1 av_t(20.76)
+KMR 2 av_m(20.16)<KMR 1 av_m(20.76)

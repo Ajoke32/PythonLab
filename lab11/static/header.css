@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Gill Sans", sans-serif;
+}
+
+/*----------------------HEADER----------------------*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    height: 5vh;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    background-color:black;
+    padding: 10px 20px 10px 20px;
+}
+
+header .autho > a {
+    color: #7bdbff;
+}
+.autho{
+    position: relative;
+}
+button,#delete{
+   padding: 5px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    position: absolute;
+}
+button{
+   background-color: #66FF66;
+    right: 120px;
+     display: none;
+       top:45px;
+}
+#delete{
+    color: #fff8f8;
+    top:5px;
+    left: 350px;
+    border: none;
+    background-color: #ff5373;
+}
+#delete:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #fd486a;
+}
+button:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #43fd43;
+}
+header .autho {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header > div:nth-child(3) {
+    flex-grow: 1;
+}
+
+header > div {
+    font-family: "Gill Sans", sans-serif;
+    color: white;
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+}
+
+header > div > a {
+    color: white;
+    text-decoration: none;
+}
+/*----------------------HEADER----------------------*/
+.prog-info{
+    margin: 130px auto;
+    width: 50%;
+    flex-direction: column;
+    gap: 15px;
+    display: flex;
+}
+.prog-info>span{
+    width: 100%;
+    text-align: center;
+}
+.prog-info>h3{
+      width: 100%;
+    text-align: center;
+}
+.prog-info>h2{
+    width: 100%;
+    text-align: center;
+}

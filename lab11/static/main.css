@@ -1,0 +1,58 @@
+body{
+
+}
+.wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.wrapper > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-size: 15px;
+    color: black;
+    height: 40vh;
+    background:linear-gradient(to right top,#f1f1f1, #dedede);
+    /*background-color: #f1f1f1;*/
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 black;
+    gap:10px;
+}
+.edited{
+    width: 90%;
+    font-size: 13px;
+    color:#6561ff;
+    text-align: right;
+}
+
+
+.buttons {
+    width: 95%;
+    gap:10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons > a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    flex-grow: 1;
+    padding: 5px;
+    /*border: 1px solid #ac59ff;*/
+    border-radius: 10px;
+    background: #66FF66;
+}
+
+.wrapper > div > img {
+    object-fit: cover;
+    width: 95%;
+    height: 60%;
+    border-radius: 10px;
+}

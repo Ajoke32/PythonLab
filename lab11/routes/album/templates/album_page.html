@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %}main{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('main.static',filename='edit.css')}}">
+{% if session['is_log']==1 %}
+<script type="module" src="{{url_for('main.static',filename='script/album.js')}}" defer></script>
+{% endif %}
+{{ super() }}
+{% endblock %}
+{% block body %}
+<h1 class="message" style="border-radius:0;"></h1>
+<div class="edit-wrapper">
+    <div class="head-info">
+        <h2 class="edit-text">
+            {{album_entity.albumname}}
+            {% if session['is_log']==1 %}
+            <img src="{{url_for('main.static',filename='img/pencil.png')}}" alt="edit" id="edit_name">
+            {% endif %}
+        </h2>
+        {% if session['is_log']==1 %}
+        <input type="button" value="delete album" id="delete">
+        {% endif %}
+        <h2>Resources</h2>
+    </div>
+    <div class="img-title">
+        <div class="img-edit">
+            <img src="{{url_for('main.static',filename='img/'+album_entity.img)}}" alt="imga">
+            {% if session['is_log']==1 %}
+            <label for="img" id="img_up">
+                <img src="{{url_for('main.static',filename='img/change.png')}}" alt="add">
+                <input type="file" id="img" name="img" data-id="{{album_entity.id}}">
+            </label>
+            {% endif %}
+        </div>
+        <div class="most-psng">
+            <div class="social-info">
+                <img src="{{url_for('main.static',filename='img/wikipedia.png')}}" alt="wiki">
+                <a href="#">Wikipedia</a>
+            </div>
+            <div class="social-info">
+                <img src="{{url_for('main.static',filename='img/spotify.png')}}" alt="wiki">
+                <a href="#">Spotify</a>
+            </div>
+            <div class="social-info">
+                <img src="{{url_for('main.static',filename='img/free.png')}}" alt="wiki">
+                <a href="#">Dowload free</a>
+            </div>
+            <div class="social-info">
+                <img src="{{url_for('main.static',filename='img/youtube.png')}}" alt="wiki">
+                <a href="#">Youtube</a>
+            </div>
+            <div class="social-info">
+                <img src="{{url_for('main.static',filename='img/music.png')}}" alt="wiki">
+                <a href="#">Apple music</a>
+            </div>
+            <div class="social-info">
+                <img src="{{url_for('main.static',filename='img/telegram.png')}}" alt="wiki">
+                <a href="#">Dowload in telegram</a>
+            </div>
+        </div>
+    </div>
+    <h2 class="edit-text">
+        About album
+        {% if session['is_log']==1 %}
+        <img src="{{url_for('main.static',filename='img/pencil.png')}}" alt="edit" id="edit_desc">
+        {% endif %}
+    </h2>
+    <div id="desc">
+        {{album_entity.description}}
+    </div>
+    <h2>Songs list</h2>
+    <div class="songs-list">
+        {% if session['is_log']==1 %}
+        <div class="song">
+            <label for="audio" class="add-song">
+                <input type="file" name="audio" id="audio">
+                <img src="{{url_for('main.static',filename='img/plus.png')}}" alt="add">
+            </label>
+            <div class="audio-desc" id="audio-desc">
+                <input type="text" name="song_name" id="song_name" required placeholder="Song name(required)">
+                <input type="text" name="link" id="link" placeholder="Link(optional)">
+            </div>
+        </div>
+        {% endif %}
+
+        {% if songs %}
+        {% for i in songs %}
+        <div class="song">
+            <audio src="{{url_for('main.static',filename='audio/'+i.audio)}}" controls></audio>
+            <div class="song-info">
+                <span>
+                    {{i.song_name}}
+                    {% if not i.audio %}
+                      | AUDIO TEMPORARILY NOT AVAILABLE |
+                    {% endif %}
+                </span>
+                {% if album_entity.link %}
+                <a href="{{album_entity.link}}">Listen in another resource</a>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+        {% elif not songs and session['is_log']!=1 %}
+        <h3>Expect new songs...</h3>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

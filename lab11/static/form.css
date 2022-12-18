@@ -1,0 +1,100 @@
+form {
+    margin: 15vh auto;
+    display: flex;
+    /*background: linear-gradient(to right top, #99CCFF 50%, #66CCFF);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 black;*/
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+form label {
+    margin-left: 2px;
+}
+form>textarea{
+ height: 200px;
+}
+form input, form select {
+    outline: none;
+    border: 1px solid darkgray;
+    font-family: cursive;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form input::placeholder, form select::placeholder {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+form input:focus, form select:focus {
+    outline: 1px solid #6633FF;
+}
+
+form input[type=submit] {
+    background-color: #CC99FF;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+form input[type=submit]:hover {
+    transition: 0.2s;
+    background-color: #CC66FF;
+    cursor: pointer;
+}
+
+form a {
+    text-decoration: none;
+    margin-left: 2px;
+}
+#log{
+    width: 25%;
+}
+#reg{
+    width: 30%;
+}
+
+.fail, .success{
+    font-family: "Gill Sans", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.fail{
+    background-color: #ff5373;
+    border: 1px solid red;
+    color:snow;
+}
+.success{
+    background-color: #40ff3a;
+    border: 1px solid chartreuse;
+    color: black;
+}
+.add-album form{
+    margin: 0;
+    width: 30%;
+}
+.add-album>form>h2{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+}
+.add-album{
+    margin-top: 15vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+}
+#song{
+    display: none;
+}

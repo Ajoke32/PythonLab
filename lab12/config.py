@@ -1,0 +1,2 @@
+TOKEN='token'
+TIMEZONE='Europe'

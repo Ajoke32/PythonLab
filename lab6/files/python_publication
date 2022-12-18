@@ -1,0 +1,228 @@
+When you look at some of the other computer languages, you will notice that
+there are a lot of curly brackets used to arrange the different blocks of code or
+to begin and end the statements. This helps you to remember to indent the code
+blocks in these languages to make the code easier to read, although the
+computer will be able to read the different codes without the indentations just
+fine.
+This type of coding can make it really difficult to read. You will see a lot of
+unnecessary information that is required for the computer to read the code, but
+can make it hard on the human eye to read this. Python uses a different way of
+doing this, mostly to help make it easier on the human eye to read what you
+have. You are going to need to ident the code for this to work. An example of
+This type of coding can make it really difficult to read. You will see a lot of
+unnecessary information that is required for the computer to read the code, but
+can make it hard on the human eye to read this. Python uses a different way of
+doing this, mostly to help make it easier on the human eye to read what you
+have.
+Most computer languages will treat uppercase and lowercase letters the same,
+but Python is one of the only ones that will be case sensitive. This means that
+the lower case and upper case letters will be treated differently in the system.
+Keep in mind as well that all the reserved words will use lower case except for
+None, False, and true.
+These basics are going to make it easier to get started on the Python
+programming. You need to take a bit of time to go through the program in order
+to get familiar with it. You aren’t going to need to become an expert, but getting
+familiar with some of the text interpreter and some of the other parts of the
+program can make it easier to use and you can learn how the different buttons
+will work even before you get started. Try out a few of the examples above
+first to help you get started.
+Python works to keep things as basic as possible because it understands that
+most of its users are going to be beginners or those who are tired of other
+complex languages. As you can see here, and in the following chapters, there
+are simple commands that you will be able to put forward in order to get the
+program to work a specific way. Study these and you can make a great program
+without quite as much work.
+There are a lot of things that you can do in Python. It is one of the most
+interactive options that you will run into when getting started in programming
+and since it is so easy to use. In this chapter, we will take some time to discuss
+more about comments and some of the other aspects of Python so you are able
+to get started and make your codes amazing in no time.
+This would tell the computer to just print “Hi, how are you?” All comments are
+ignored in the Python interpreter because it is more of a footnote in the program
+to help the programmer, or others who may use the code, special things about
+the code. They are basically there to say what the program is supposed to do
+and how it will work. It is a bit more detailed and can be helpful without getting
+in the way of how the code works.
+You will not need to leave a comment on every line, just when it is needed. If
+the programmer feels that something needs explained better, they would put in a
+comment but don’t expect to see it all over the place. Python doesn’t support
+any comments that will go across several lines so if you have a longer
+comment in the program, figure out how to split it up into different lines with
+the # sign in front of each part.
+Some programs are going to show the text you want on the screen, or they can
+request certain information. You may want to start out the program code by
+telling the reader what your program is all about. Giving it a name or a title can
+make things easier so the other coder knows what is in the program and can
+pick the right one for them.
+The best way to get the right information to show up is show a string literal that
+will include the “print” function. For those who don’t know, string literals are
+basically lines of text that will be surrounded by some quotes, either a single or
+double quote. The type of quote that you use isn’t going to matter that much,
+but if you use one type in the beginning of the phrase, you should use it at the
+end. So if there are double quotes at the beginning of your phrase, make sure
+that you keep up with the double quotes at the end as well.
+When you want the computer to display a word or phrase on the screen, you
+would simply have “print” and then the phrase after it. For example, if you
+want to portray “Welcome!” you would do
+
+Now this may look like a simple equation, but there is quite a bit that is going
+on in the string above that you should watch out for. In the spot with you
+opened up the myfile.txt to write on and then assigned it to the variable called
+myfile. Then in the second part, you wrote in Hello! To the file as a new line
+and then the w told the program that you will only be able to write the changes
+when the file is open.
+Of course, you don’t have to use the print function to get it to do the work that
+you want. The write method will often work well too. For example, you can
+replace the print with write like the example below to get the same things.
+Your computer is capable of processing a lot of information including numbers
+and characters. The types of information that the Python program will use are
+known as types and the language will contain many different types to help
+make things easier. Some of these include string, integers, and floating point
+numbers. Programmers can even define these different types using classes.
+Types will consist of two separate parts. The first part is a domain that will
+contain a possible set of values and the second part is a set that contains the
+possible operations. Both of these can be performed on any value. An example
+of this is that if you have a domain that is a type of integer, it can only contain
+integers inside it including addition, division, multiplication, and subtraction.
+One thing to note with this is that Python is a dynamically typed program. This
+means that there really isn’t a need to specify the types for the variables when
+you create it. The same variables can be used to store the values of different
+types. Despite this, Python still needs you to have all the variables with a
+definitive type. For example, if the programmer tried to add in a number to a
+string, the Python program would recognize this and show an error. It won’t try
+to figure out what you wanted; rather it will just exit without trying
+While a string may seem like something complicated, in Python they are
+basically a sequence of characters. They are going to work the same way as a
+list does, but they will contain a bit more functionality that is specific to the
+text.
+Formatting strings can be a challenge when it comes to writing out your out
+your code. There are some messages that aren’t going to be fixed string and
+sometimes there are values that are stored inside variables inside it. There is a
+way to get this to work right for string formatting. An example of this is:
+We have spent a bit of time talking about both single and double quotes, but
+there are times when you may need to bring in the triple quote. This is used
+when you need to define a literal that will span many lines or one that already
+has a lot of quotes in it. To do this, just use a single and double together or
+three singles. The same rule applies with the triple quote as with all the others.
+You will need to star and end the phrase with the same one.
+String Operations
+One of the string operations that you may use a lot is a concatenation. This is
+used in order to join a pair of strings together and you will notice it is there
+with the + symbol. There are a lot of functions that Python is able to help you
+with and they will work with the strings to create a variety of operations. They
+are going to have some useful options that can do a lot more in the Pythons
+program
+In Python program, strings are called immutable. This means that once you
+create the string, it is not capable of being changed. You may have to assign a
+new valuable to a specific variable that exists if you are looking to make some
+changes.
+There is so much that you are able to learn about when it comes to getting
+started with Python. It may be a simple language, but you want to be able to
+learn how it works, how to write things down properly, and even how to leave a
+comment for others to understand when they are looking through the code. It
+may seem a bit intimidating in the beginning, but before too long, and with
+some practice, you will get it down and be writing your own code in no time.
+The next thing that we are going to discuss are variables. Variables are
+basically the labels that will denote where in your computers memory
+something is going to be stored and they can also hold values. When it comes
+to programming that is typed with statistics, the variables will each have a
+value that is predetermined and each variable is only going to hold the value of
+that type. Python has made it a bit easier because you can use one of your
+variables in order to store different types.
+Think about your calculator for this one. The variable is going to be like the
+memory function in this calculator. It will hold onto a value so that you can
+retrieve it any time that you want, but when you store in a newer value, the
+older one will be erased. The only difference is that you will be able to have a
+large number of variables and each of them will have different values, each of
+them being referred by their own name.
+With Python you will be able to define a variable by giving the label a value.
+For example, you can name a variable count and have it an integer value of
+one. You would show this by simply writing
+count = 1
+Note that with this syntax, you can assign a value to the variable with the same
+name. If you try to access values in a variable that hasn’t been defined, the
+Python interpreter won’t read through this. It will just exit out of the program
+and give you an error.
+You can choose to define a few different variables in one line, but this is not
+the best practice for you to use. For example, you could do this
+You won’t be able to access every variable from all parts of the program and
+not every variable will be the same length. The way that you defined the
+variable is going to determine where and how long you will be able to access
+this variable. The section of your program where you can access the variable is
+going to be known as the “scope” and the time that the variable will be
+available is known as the “lifetime”.
+Global variables are those that are defined within the main file body and you
+will be able to see these variables throughout the entire file as well as inside a
+file that will be able to import the specific file. These variables have far
+reaching effects and because of this, you may notice some consequences that
+you didn’t notice. This is why most people won’t use global variables, or they
+will use them sparingly. You should only add stuff into the global namespace if
+you plan to use them globally, like with functions or classes.
+On the other hand, if you define a variable inside of another variable, it will be
+called a local variable. This one has the ability to be accessed from where it is
+defined and will only exist when that function executes. These are only going to
+be available in certain areas of the program and can’t be found or used
+elsewhere.
+The assignment operator
+We have discussed this option a bit throughout the book, but haven’t really
+given it a name. The assignment operator is the equals sign or the (=). It is
+going to be used in programming to assign the value to the right of the
+statement to the variable that is located t the left. Sometimes the variable will
+be created first. In cases where the value on the right is from an expression,
+such as an arithmetic expression, the evaluation will take place before this
+assignment happens.
+Keep in mind that the (=) is not going to be a mathematical sign in
+programming. You can add things to the number and make all sorts of changes
+that wouldn’t make sense if you thought of this sign as a mathematical one.
+Rather it is an assignment operator so that the statement will be turned into the
+part on the right.
+When you assign the first value to this variable, you are going through the
+process of initializing. The definition of a value assignment and variable are
+carried out in the single step in this programming, although it is sometimes done
+in two steps with some of the other programming languages. But since it is
+done in one step, it is less likely that the user will make a mistake or receive an
+error in the process.
+In some programming languages, you will be able to define a special variable
+that has a value that has been set. This means that the value can’t be changed.
+These are called constants in the programming language. For the most part,
+Python is not going to allow for these kinds of restrictions, but there is a
+convention that is used to help ensure that some variables are marked to
+indicate that the values aren’t supposed to be changed. To show this, the names
+will be written in CAPITAL letters with underscores between each word. An
+example of a variable that is a constants include:
+Of course, there are no rules to say you have to put the right number at the end.
+You could say there are 8 days in a week if you want because the Python
+program won’t be keeping track, but it is best to just keep it accurate in case
+other coders would like to use it.
+These can be really helpful to you in your string. Sometimes in the program,
+for example, you will want to change the maximum of a number that is allowed
+in the program. This may work fine for a bit, but maybe later on you need to
+increase or decrease this number. Without setting up a constants, you are going
+to have to go through and make quite a few changes to get everything matched
+up. But with a good constants in order, you can just go back to one place and
+get it all fixed up.
+Understanding how the strings work in your program can make a big difference
+in the success that you see with this program. You need to learn where they are
+stored, what the rules are that govern each of them, and how to make them
+work in a specific part of the program. With a bit of practice, and using the
+guidelines above, you will get this down in no tie and can be an expert too!
+Learning how to get started with computer programing can seem like a big
+challenge. There are many different programming options that you can go with,
+but many of them are hard to learn, will take some time to figure out, and won’t
+always do all of the stuff that you need. Many people fear that they need to be
+really smart or have a lot of education and experience in coding before they are
+able to make it to the coding level they want. But with Python, even a beginner
+can get into programming.
+Python has made it so easy to get started with coding whether you are a
+beginner or have been in this business for some time. The language is based in
+English so it is easy to read and it has gotten rid of a lot of the other symbols
+that make coding hard to read for others. And since it is user domain, anyone
+can make changes and see other codes to make things easier.
+This guidebook has spent some time talking about the different functions that
+you can do in Python and how easy it is for a beginner to get started. You will
+find that this process is easy and you can learn it with a little bit of practice. It
+is easy to use, works across a lot of platforms, and even the newer Mac
+systems come with this already downloaded.
+When you are ready to get started on programming, or you want to find a
+program that is going to do a lot of great things without all the hassle, make
+sure to check out Python.
